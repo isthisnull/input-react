@@ -39,3 +39,18 @@
 .counter span {
   color: rgb(69, 0, 134);
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 2rem;
+}

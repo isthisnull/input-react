@@ -1,7 +1,12 @@
 import "./App.css";
 import React, { useState } from "react";
+import Color from "./Color.jsx";
+import Input from "./Input.jsx";
+
 function App() {
   const [meqdar, setMeqdar] = useState("");
+  const [colorValue, setColorValue] = useState("");
+  const [hexValue, setHexValue] = useState("");
   return (
     <div className="Container">
       <p>What is the name?</p>
@@ -25,6 +30,12 @@ function App() {
         ></textarea>
         <div className="counter">{meqdar.length}/100</div>
       </div>
+      <Color colorValue={colorValue} hexValue={hexValue} />
+      <Input
+        colorValue={colorValue}
+        setColorValue={setColorValue}
+        setHexValue={setHexValue}
+      />
     </div>
   );
 }
