@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import Color from "./Color.jsx";
 import Input from "./Input.jsx";
+import Button from "./Button";
 
 function App() {
   const [meqdar, setMeqdar] = useState("");
@@ -9,7 +10,7 @@ function App() {
   const [hexValue, setHexValue] = useState("");
   return (
     <div className="Container">
-      <p>What is the name?</p>
+      {/*       <p>What is the name?</p>
       <input
         placeholder="Eg. MFKs Arts"
         type="text"
@@ -29,7 +30,7 @@ function App() {
           onChange={(e) => setMeqdar(e.target.value)}
         ></textarea>
         <div className="counter">{meqdar.length}/100</div>
-      </div>
+      </div> */}
       <Color colorValue={colorValue} hexValue={hexValue} />
       <Input
         colorValue={colorValue}
