@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.descriptionInput {
+  padding: 10px 15px 50px 10px;
+}
+.nameInput,
+.textareadescript {
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px 15px;
+}
+.nameInput::placeholder,
+.textareadescript::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.textareadescript {
+  resize: none;
+}
+.descriptionContainer {
+  position: relative;
+}
+.counter {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+}
+.Container {
+  width: 290px;
+}
+.counter span {
+  color: rgb(69, 0, 134);
+}
