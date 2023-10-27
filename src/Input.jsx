@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useReducer } from "react";
 import colorNames from "colornames";
+
 const Input = ({ colorValue, setColorValue, setHexValue }) => {
   return (
     <form onSubmit={(e) => e.preventDefault()}>
@@ -15,6 +16,8 @@ const Input = ({ colorValue, setColorValue, setHexValue }) => {
           setHexValue(colorNames(e.target.value));
         }}
       />
+      <button>click me</button>
+      <p>{}</p>
     </form>
   );
 };

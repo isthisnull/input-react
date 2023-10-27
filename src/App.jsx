@@ -31,12 +31,13 @@ function App() {
         ></textarea>
         <div className="counter">{meqdar.length}/100</div>
       </div> */}
-      <Color colorValue={colorValue} hexValue={hexValue} />
+      {/* <Color colorValue={colorValue} hexValue={hexValue} /> */}
       <Input
         colorValue={colorValue}
         setColorValue={setColorValue}
         setHexValue={setHexValue}
       />
+      ss
     </div>
   );
 }
